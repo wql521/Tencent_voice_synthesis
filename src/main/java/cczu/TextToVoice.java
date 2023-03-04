@@ -27,7 +27,7 @@ public class TextToVoice {
             try{
                 // 实例化一个认证对象，入参需要传入腾讯云账户 SecretId 和 SecretKey，此处还需注意密钥对的保密
                 // 代码泄露可能会导致 SecretId 和 SecretKey 泄露，并威胁账号下所有资源的安全性。
-                Credential cred = new Credential("AKIDb3KQK3KWWKyRjpjRwGOJ2avWwBE5jBRU", "udAVdidKQIvKVSAeuwkJjCRSEm6C4iBQ");
+                Credential cred = new Credential("SecretId", "SecretKey");
                 // 实例化一个http选项，可选的，没有特殊需求可以跳过
                 HttpProfile httpProfile = new HttpProfile();
                 httpProfile.setEndpoint("tts.ap-shanghai.tencentcloudapi.com");
